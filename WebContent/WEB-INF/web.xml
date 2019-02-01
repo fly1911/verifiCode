@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>verifiCodeDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <display-name>VerifiCodeServlet</display-name>
+    <servlet-name>VerifiCodeServlet</servlet-name>
+    <servlet-class>com.code.servlet.VerifiCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifiCodeServlet</servlet-name>
+    <url-pattern>/verifiCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetVerifiWordsServlet</display-name>
+    <servlet-name>GetVerifiWordsServlet</servlet-name>
+    <servlet-class>com.code.servlet.GetVerifiWordsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetVerifiWordsServlet</servlet-name>
+    <url-pattern>/getVerifiWordsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckVerifiCodeServlet</display-name>
+    <servlet-name>CheckVerifiCodeServlet</servlet-name>
+    <servlet-class>com.code.servlet.CheckVerifiCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckVerifiCodeServlet</servlet-name>
+    <url-pattern>/checkVerifiCodeServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
